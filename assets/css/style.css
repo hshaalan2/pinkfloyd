@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* display: flex; */
+    margin: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  /* Style the top navigation bar */
+  nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .column {
+    /* background-color: antiquewhite; */
+    float: left;
+    width: 33%;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 1px;
+    height: 250px;
+    
+    
+}
+
+  /* .sidebar  {
+    background-color:azure;
+    float: right;
+    width: 33%;
+    padding: 10px;
+    border: 1px solid black;
+  } */
+  
+  /* Clear floats after the columns */
+/* section::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+  footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid black;
+  }
+
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  .albums::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .albums {
+    flex: 4;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  /* TODO: Add properties to the cards to achieve the required look 
+  added border-radius to round corners
+  added box-shadow to create shadow effect
+  add transform: rotate(20deg) to rotate images
+  */
+  .card {
+    border-style: solid;
+    border-color:rosybrown;
+    border-width: 5px;
+    border-radius: 25px;
+    box-shadow: 25px 25px grey;
+    transform: rotate(-15deg);
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 250px;
+  }
+  
+  .card header {
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: center;
+  }
+  
+  .card img {
+    width: 75%;
+  }
+  
+  /* section::after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+  .band {
+    flex: 4;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .members {
+    border-style: solid;
+    border-color:rosybrown;
+    border-width: 5px;
+    border-radius: 25px;
+    box-shadow: 25px 25px grey;
+    transform: rotate(15deg);
+    padding: 10px;
+    margin: 20px;
+    flex: 0 0 250px;
+  }
+  
+  .members header {
+    padding: 20px;
+  }
+  
+  .members p {
+    text-align: center;
+  }
+  
+  .members img {
+    width: 100%;
+  }
+
+  .members a {
+    text-align: center;
+  }
+
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }

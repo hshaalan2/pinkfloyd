@@ -1,0 +1,54 @@
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  } 
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+    margin: 0;
+  }
+
+header {
+  padding: 1px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;  
+}
+
+section {
+  float: left;
+  padding: 2px;
+  width: 70%;
+  /*background-color: #f1f1f1;*/
+  height: 300px; 
+}
+
+aside {
+  float: right;
+  width: 20%;
+  /*height: 300px;*/  
+  background: #ccc;
+  padding: 2px;
+}
+
+img {
+  max-width: 500px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align:justify;
+  color: white; 
+}
+
+/*.hero {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./images/prism.jpg");
+  background-size: cover;
+  background-position: center;
+}*/
